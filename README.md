@@ -8,4 +8,26 @@ After using Yandex.Mail for almost a year I realized that there is absolutely no
 
 ## Disclaimer
 
-This wrapper isn't affiliated or connected or whatever with Yandex LLC. I'm not their employee.
+This wrapper isn't affiliated or connected or whatever with Yandex LLC. I'm not their employee. This wrapper was initially created for me and my wife.
+
+## Installation
+
+``yarn`` must be installed.
+
+Install dependencies:
+
+```
+yarn install
+```
+
+To "just start" the wrapper:
+
+```
+yarn start
+```
+
+To build package:
+
+```
+yarn build
+```
