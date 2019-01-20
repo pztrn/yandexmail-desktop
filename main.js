@@ -44,7 +44,7 @@ function createWindow() {
     mainWindow.setIcon(normalIcon);
 
     // Tray icon. Do not create it on macOS.
-    if (app.platform != "darwin") {
+    if (process.platform != "darwin") {
         tray = new Tray(normalIcon);
         const contextMenu = Menu.buildFromTemplate([
             { label: 'Open Yandex.Mail window', type: 'normal', click: showHideMainWindow },
@@ -87,7 +87,7 @@ app.on('activate', function () {
 
 ipc.on("has-unread", function (event, count) {
     mainWindow.setIcon(unreadIcon);
-    if (app.platform == "darwin") {
+    if (process.platform == "darwin") {
         app.setBadgeCount(count);
     } else {
         tray.setImage(unreadIcon);
@@ -96,7 +96,7 @@ ipc.on("has-unread", function (event, count) {
 
 ipc.on("has-no-unread", function (event, count) {
     mainWindow.setIcon(normalIcon);
-    if (app.platform == "darwin") {
+    if (process.platform == "darwin") {
         app.setBadgeCount(count);
     } else {
         tray.setImage(unreadIcon);
