@@ -1,0 +1,38 @@
+{
+    "name": "yandexmail-desktop",
+    "version": "0.1.0",
+    "description": "An Electron wrapper around Yandex.Mail",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": "https://gitlab.com/pztrn/yandexmail-desktop",
+    "keywords": [
+        "Electron",
+        "yandex",
+        "mail client",
+        "mail",
+        "yandex.mail"
+    ],
+    "author": "Stanislav N. aka pztrn",
+    "license": "GPLv3",
+    "devDependencies": {
+        "electron": "^4.0.1",
+        "electron-builder": "^20.38.5"
+    },
+    "dependencies": {
+        "electron-window-state": "^5.0.3"
+    },
+    "build": {
+        "appId": "name.pztrn.yandexmail-desktop",
+        "productName": "Yandex.Mail Desktop",
+        "copyright": "Copyright (c) 2019, Stanislav N. aka pztrn",
+        "mac": {
+            "category": "name.pztrn.yandexmail-desktop"
+        },
+        "linux": {
+            "category": "Internet",
+            "icon": "./assets/icons/icon.png"
+        }
+    }
+}

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW X7 -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   width="86.6986mm"
+   height="86.6986mm"
+   version="1.1"
+   style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+   viewBox="0 0 8670 8670"
+   id="svg17"
+   sodipodi:docname="yandex-mail-icon-unread.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"><metadata
+   id="metadata21"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1042"
+   id="namedview19"
+   showgrid="false"
+   inkscape:zoom="0.72021539"
+   inkscape:cx="163.83988"
+   inkscape:cy="163.83988"
+   inkscape:window-x="0"
+   inkscape:window-y="38"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg17" />
+ <defs
+   id="defs4">
+  <style
+   type="text/css"
+   id="style2">
+   <![CDATA[
+    .fil3 {fill:none}
+    .fil2 {fill:#EE0000}
+    .fil1 {fill:#F2C202}
+    .fil0 {fill:#FFCC02}
+   ]]>
+  </style>
+ 
+  
+  
+  
+ <filter
+   inkscape:label="Plaster Color"
+   inkscape:menu="Bumps"
+   inkscape:menu-tooltip="Colored plaster emboss effect"
+   style="color-interpolation-filters:sRGB;"
+   id="filter282"><feGaussianBlur
+     result="result10"
+     stdDeviation="5"
+     id="feGaussianBlur242" /><feGaussianBlur
+     in="SourceGraphic"
+     result="result4"
+     stdDeviation="1.5"
+     id="feGaussianBlur244" /><feBlend
+     mode="darken"
+     in2="result10"
+     id="feBlend246" /><feComposite
+     operator="atop"
+     in2="SourceGraphic"
+     result="result5"
+     id="feComposite248" /><feColorMatrix
+     type="saturate"
+     values="0"
+     result="result1"
+     in="result5"
+     id="feColorMatrix250" /><feComponentTransfer
+     result="component1"
+     in="result1"
+     id="feComponentTransfer258"><feFuncR
+       type="table"
+       tableValues="0 0.2 0.133333 0.3 0.4 0.333333 0.5 0.6 0.533333 0.7 0.8 0.733333 0.9 1 0.933333 1.1 1"
+       id="feFuncR252" /><feFuncG
+       type="table"
+       tableValues="0 0.2 0.133333 0.3 0.4 0.333333 0.5 0.6 0.533333 0.7 0.8 0.733333 0.9 1 0.933333 1.1 1"
+       id="feFuncG254" /><feFuncB
+       type="table"
+       tableValues="0 0.2 0.133333 0.3 0.4 0.333333 0.5 0.6 0.533333 0.7 0.8 0.733333 0.9 1 0.933333 1.1 1"
+       id="feFuncB256" /></feComponentTransfer><feFlood
+     flood-color="rgb(255,0,0)"
+     result="result2"
+     id="feFlood260" /><feBlend
+     in2="component1"
+     mode="screen"
+     result="result2"
+     in="result2"
+     id="feBlend262" /><feBlend
+     result="fbSourceGraphic"
+     mode="multiply"
+     in2="component1"
+     id="feBlend264" /><feColorMatrix
+     result="result2"
+     type="luminanceToAlpha"
+     in="fbSourceGraphic"
+     id="feColorMatrix266" /><feDiffuseLighting
+     lighting-color="#ffffff"
+     in="result2"
+     diffuseConstant="1"
+     result="result1"
+     surfaceScale="15"
+     id="feDiffuseLighting270"><feDistantLight
+       azimuth="31"
+       elevation="10"
+       id="feDistantLight268" /></feDiffuseLighting><feSpecularLighting
+     specularExponent="10"
+     in="result2"
+     result="result11"
+     surfaceScale="-15"
+     id="feSpecularLighting274"><feDistantLight
+       azimuth="225"
+       elevation="45"
+       id="feDistantLight272" /></feSpecularLighting><feComposite
+     operator="arithmetic"
+     k2="0.5"
+     k3="0.5"
+     in2="result1"
+     result="result12"
+     id="feComposite276" /><feComposite
+     in="result12"
+     in2="fbSourceGraphic"
+     result="result9"
+     operator="arithmetic"
+     k2="1"
+     k3="1"
+     id="feComposite278" /><feComposite
+     in2="SourceGraphic"
+     result="result7"
+     operator="in"
+     id="feComposite280" /></filter></defs>
+ <g
+   id="_871737424">
+   <polygon
+   style="fill:#ffcc02"
+   id="polygon7"
+   points="8670,7564 0,7564 0,1106 8670,1106 "
+   class="fil0" />
+   <path
+   style="fill:#f2c202"
+   inkscape:connector-curvature="0"
+   id="path9"
+   d="M 0,7520 3858,4167 c 262,-229 694,-227 959,4 l 3853,3349 v 44 H 0 Z"
+   class="fil1" />
+   <path
+   style="fill:#ee0000"
+   inkscape:connector-curvature="0"
+   id="path11"
+   d="M 8670,1129 4814,4617 c -263,239 -696,238 -961,-2 L 0,1129 v -23 h 8670 z"
+   class="fil2" />
+  </g><rect
+   style="fill:none"
+   y="0"
+   x="0"
+   id="rect14"
+   height="8670"
+   width="8670"
+   class="fil3" />
+<circle
+   id="path20"
+   cx="6833.1357"
+   cy="5694.2798"
+   r="1726.6526"
+   style="fill:#37c837;stroke-width:26.45876122;filter:url(#filter282)" /></svg>
