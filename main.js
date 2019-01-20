@@ -34,7 +34,7 @@ function createWindow() {
     });
     mainWindowState.manage(mainWindow);
 
-    mainWindow.webContents.openDevTools();
+    //mainWindow.webContents.openDevTools();
     mainWindow.loadURL('https://mail.yandex.ru/');
     //mainWindow.loadFile(path.join(__dirname, "index.html"));
     mainWindow.on('closed', function () {
