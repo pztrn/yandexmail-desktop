@@ -58,6 +58,8 @@ function createWindow() {
             showHideMainWindow(null, mainWindow, null);
         });
 
+    } else {
+        app.dock.setIcon(normalIcon);
     }
 
     mainWindow.Notification = function (title, options) {
@@ -88,7 +90,7 @@ app.on('activate', function () {
 ipc.on("has-unread", function (event, count) {
     mainWindow.setIcon(unreadIcon);
     if (process.platform == "darwin") {
-        app.setBadgeCount(count);
+        app.dock.setIcon(unreadIcon);
     } else {
         tray.setImage(unreadIcon);
     }
@@ -97,9 +99,9 @@ ipc.on("has-unread", function (event, count) {
 ipc.on("has-no-unread", function (event, count) {
     mainWindow.setIcon(normalIcon);
     if (process.platform == "darwin") {
-        app.setBadgeCount(count);
+        app.dock.setIcon(normalIcon);
     } else {
-        tray.setImage(unreadIcon);
+        tray.setImage(normalIcon);
     }
 })
 
