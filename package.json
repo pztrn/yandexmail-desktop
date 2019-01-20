@@ -28,7 +28,8 @@
         "productName": "Yandex.Mail Desktop",
         "copyright": "Copyright (c) 2019, Stanislav N. aka pztrn",
         "mac": {
-            "category": "name.pztrn.yandexmail-desktop"
+            "category": "name.pztrn.yandexmail-desktop",
+            "icon": "./assets/icons/icon.png"
         },
         "linux": {
             "category": "Internet",

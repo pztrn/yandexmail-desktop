@@ -43,19 +43,22 @@ function createWindow() {
 
     mainWindow.setIcon(normalIcon);
 
-    // Tray icon.
-    tray = new Tray(normalIcon);
-    const contextMenu = Menu.buildFromTemplate([
-        { label: 'Open Yandex.Mail window', type: 'normal', click: showHideMainWindow },
-        { label: '-', type: 'separator' },
-        { label: 'Exit Yandex.Mail wrapper', type: 'normal', click: quitWrapper }
-    ]);
-    tray.setTitle('Yandex.Mail');
-    tray.setToolTip('Yandex.Mail');
-    tray.setContextMenu(contextMenu);
-    tray.on('click', () => {
-        showHideMainWindow(null, mainWindow, null);
-    });
+    // Tray icon. Do not create it on macOS.
+    if (app.platform != "darwin") {
+        tray = new Tray(normalIcon);
+        const contextMenu = Menu.buildFromTemplate([
+            { label: 'Open Yandex.Mail window', type: 'normal', click: showHideMainWindow },
+            { label: '-', type: 'separator' },
+            { label: 'Exit Yandex.Mail wrapper', type: 'normal', click: quitWrapper }
+        ]);
+        tray.setTitle('Yandex.Mail');
+        tray.setToolTip('Yandex.Mail');
+        tray.setContextMenu(contextMenu);
+        tray.on('click', () => {
+            showHideMainWindow(null, mainWindow, null);
+        });
+
+    }
 
     mainWindow.Notification = function (title, options) {
         options.icon = unreadIcon;
@@ -82,14 +85,22 @@ app.on('activate', function () {
     }
 });
 
-ipc.on("has-unread", function () {
+ipc.on("has-unread", function (event, count) {
     mainWindow.setIcon(unreadIcon);
-    tray.setImage(unreadIcon);
+    if (app.platform == "darwin") {
+        app.setBadgeCount(count);
+    } else {
+        tray.setImage(unreadIcon);
+    }
 });
 
-ipc.on("has-no-unread", function () {
+ipc.on("has-no-unread", function (event, count) {
     mainWindow.setIcon(normalIcon);
-    tray.setImage(normalIcon);
+    if (app.platform == "darwin") {
+        app.setBadgeCount(count);
+    } else {
+        tray.setImage(unreadIcon);
+    }
 })
 
 function showHideMainWindow() {
