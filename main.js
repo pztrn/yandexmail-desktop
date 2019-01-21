@@ -36,7 +36,6 @@ function createWindow() {
 
     //mainWindow.webContents.openDevTools();
     mainWindow.loadURL('https://mail.yandex.ru/');
-    //mainWindow.loadFile(path.join(__dirname, "index.html"));
     mainWindow.on('closed', function () {
         mainWindow = null;
     })
