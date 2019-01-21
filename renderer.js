@@ -6,8 +6,17 @@ const { shell } = require('electron')
 
 // Unread mails check.
 function checkForUnreads() {
-    unread = parseInt(document.title.split(' ')[0]);
-    if (typeof (unread) != NaN && unread > 0) {
+    //var unread = parseInt($(".mail-MessagesFilters-Item_unread .mail-LabelList-Item_count").html());
+    var unread = 0;
+    items = document.getElementsByClassName('mail-LabelList-Item_count');
+    for (var i = 0; i < items.length; i++) {
+        var unreadInt = parseInt(items[i].innerHTML);
+        if (typeof (unreadInt) != NaN && unreadInt > 0) {
+            unread += unreadInt;
+        }
+    }
+
+    if (unread > 0) {
         ipc.send('has-unread', unread);
     } else {
         ipc.send('has-no-unread');
