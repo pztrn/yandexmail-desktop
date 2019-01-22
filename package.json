@@ -15,7 +15,7 @@
         "yandex.mail"
     ],
     "author": "Stanislav N. aka pztrn",
-    "license": "GPLv3",
+    "license": "GPL-3.0-or-later",
     "devDependencies": {
         "electron": "^4.0.1",
         "electron-builder": "^20.38.5"
